@@ -5,93 +5,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/styles/styles.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/styles/styles.css">
     <title>Fashion Store</title>
 </head>
 
 <body class="body">
     <header class="header">
-        <img src="" alt="" class="header__logo">
+        <div class="header__logo">FASHION</div>
         <nav class="header__menu">
-            <a href="" class="body__link">HOME</a>
-            <a href="" class="body__link">SHOP</a>
-            <a href="" class="body__link">WOMEN</a>
-            <a href="" class="body__link">MEN</a>
-            <a href="" class="body__link">FIND STORES</a>
+            <a href="">HOME</a>
+            <a href="">SHOP</a>
+            <a href="">WOMEN</a>
+            <a href="">MEN</a>
+            <a href="">FIND STORES</a>
         </nav>
-        <nav class="header__settings"></nav>
+        <nav class="header__settings">SETTINGS</nav>
     </header>
     <main class="main">
         <div class="banner">
-            <img src="images/banner-slide.png" alt="Main Banner" class="banner__slide">
+            <img src="../src/images/banner-slide.png" alt="Main Banner" class="banner__slide">
             <div class="banner__socials"></div>
             <div class="banner__specials"></div>
         </div>
-        <nav class="categories">
-            <a href="" class="categories__item body__link">All</a>
-            <a href="" class="categories__item body__link">spring-summer</a>
-            <a href="" class="categories__item body__link">sweatshirt</a>
-            <a href="" class="categories__item body__link">sneakers</a>
-            <a href="" class="categories__item body__link">gadgets</a>
-            <a href="" class="categories__item body__link">outdoor</a>
+        <nav class="categories title_size-h3">
+            <a href="" class="categories__item">All</a>
+            <a href="" class="categories__item">spring-summer</a>
+            <a href="" class="categories__item">sweatshirt</a>
+            <a href="" class="categories__item">sneakers</a>
+            <a href="" class="categories__item">gadgets</a>
+            <a href="" class="categories__item">outdoor</a>
         </nav>
-        <div class="gallery">
-            <img src="images/galery-img-1.png" alt="Galery" class="gallery__item">
-            <img src="images/galery-img-2.png" alt="Galery" class="gallery__item">
-            <img src="images/galery-img-3.png" alt="Galery" class="gallery__item">
-            <img src="images/galery-img-4.png" alt="Galery" class="gallery__item">
-            <img src="images/galery-img-5.png" alt="Galery" class="gallery__item">
+        <!---
+        <div class="main__container">
+            <div class="gallery">
+                <img src="../src/images/galery-img-1.png" alt="Galery" class="gallery__item">
+                <img src="../src/images/galery-img-2.png" alt="Galery" class="gallery__item">
+                <img src="../src/images/galery-img-3.png" alt="Galery" class="gallery__item">
+                <img src="../src/images/galery-img-4.png" alt="Galery" class="gallery__item">
+                <img src="../src/images/galery-img-5.png" alt="Galery" class="gallery__item">
+            </div>
         </div>
+    -->
         <div class="main__container">
             <h2 class="title title_size-h2">PRODUCT TYPES</h2>
             <p class="title title_size-h4">up to 30% discount</p>
             <div class="carousel">
                 <button class="carousel__btn carousel__btn_style-rect">PREV</button>
                 <div class="carousel__items carousel__items_count-x3">
-                    <img src="images/men-category.png" alt="Men Shop" class="carousel__item">
-                    <img src="images/women-category.png" alt="Women Shop" class="carousel__item">
-                    <img src="images/kids-category.png" alt="Kids Shop" class="carousel__item">
+                    <div class="carousel__item"><img src="../src/images/men-category.png" alt="Men Shop"
+                            class="carousel__image"></div>
+                    <div class="carousel__item"><img src="../src/images/women-category.png" alt="Women Shop"
+                            class="carousel__image"></div>
+                    <div class="carousel__item"><img src="../src/images/kids-category.png" alt="Kids Shop"
+                            class="carousel__image"></div>
                 </div>
                 <button class="carousel__btn carousel__btn_style-rect">NEXT</button>
             </div>
         </div>
         <div class="main__container">
             <h2 class="title title_size-h2">FEATURED PRODUCTS</h2>
-            <nav class="categories">
-                <a href="" class="categories__item body__link">All</a>
-                <a href="" class="categories__item body__link">spring-summer</a>
-                <a href="" class="categories__item body__link">sweatshirt</a>
-                <a href="" class="categories__item body__link">sneakers</a>
-                <a href="" class="categories__item body__link">gadgets</a>
-                <a href="" class="categories__item body__link">outdoor</a>
+            <nav class="categories title_size-h3">
+                <a href="" class="categories__item">All</a>
+                <a href="" class="categories__item">spring-summer</a>
+                <a href="" class="categories__item">sweatshirt</a>
+                <a href="" class="categories__item">sneakers</a>
+                <a href="" class="categories__item">gadgets</a>
+                <a href="" class="categories__item">outdoor</a>
             </nav>
             <div class="carousel">
                 <button class="carousel__btn carousel__btn_style-round"></button>
                 <div class="carousel__items carousel__items_count-x4">
-                    <section class="carousel__item">
-                        <img src="images/cloth-1.png" alt="Ted Baker Womens Light" class="carousel__image">
+                    <div class="carousel__item">
+                        <img src="../src/images/cloth-1.png" alt="Ted Baker Womens Light" class="carousel__image">
                         <h6 class="title title_size-h6 title_align-left">Ted Baker Womens Light</h6>
                         <p class="body_text-secondary">Gucci</p>
-                        <p class="body_text-secondary">$70.00 $120.00</p>
-                    </section>
-                    <section class="carousel__item">
-                        <img src="images/cloth-2.png" alt="Ted Baker Womens Light" class="carousel__image">
+                        <p class="body__text">$70.00 $120.00</p>
+                    </div>
+                    <div class="carousel__item">
+                        <img src="../src/images/cloth-2.png" alt="Ted Baker Womens Light" class="carousel__image">
                         <h6 class="title title_size-h6 title_align-left">Ted Baker Womens Light</h6>
                         <p class="body_text-secondary">Gucci</p>
-                        <p class="body_text-secondary">$70.00 $120.00</p>
-                    </section>
-                    <section class="carousel__item">
-                        <img src="images/cloth-3.png" alt="Ted Baker Womens Light" class="carousel__image">
+                        <p class="body__text">$70.00 $120.00</p>
+                    </div>
+                    <div class="carousel__item">
+                        <img src="../src/images/cloth-3.png" alt="Ted Baker Womens Light" class="carousel__image">
                         <h6 class="title title_size-h6 title_align-left">Ted Baker Womens Light</h6>
                         <p class="body_text-secondary">Gucci</p>
-                        <p class="body_text-secondary">$70.00 $120.00</p>
-                    </section>
-                    <section class="carousel__item">
-                        <img src="images/cloth-4.png" alt="Ted Baker Womens Light" class="carousel__image">
+                        <p class="body__text">$70.00 $120.00</p>
+                    </div>
+                    <div class="carousel__item">
+                        <img src="../src/images/cloth-4.png" alt="Ted Baker Womens Light" class="carousel__image">
                         <h6 class="title title_size-h6 title_align-left">Ted Baker Womens Light</h6>
                         <p class="body_text-secondary">Gucci</p>
-                        <p class="body_text-secondary">$70.00 $120.00</p>
-                    </section>
+                        <p class="body__text">$70.00 $120.00</p>
+                    </div>
                 </div>
                 <button class="carousel__btn carousel__btn_style-round"></button>
             </div>
@@ -103,18 +113,20 @@
                 <button class="carousel__btn carousel__btn_style-round"></button>
                 <div class="carousel__items carousel__items_count-x2">
                     <figure class="carousel__item">
-                        <img src="images/blog-1.png" alt="The 15 Secrets About Fashion People">
+                        <img src="../src/images/blog-1.png" alt="The 15 Secrets About Fashion People"
+                            class="carousel__image">
                         <figcaption>
                             <h3 class="title title_size-h3">The 15 Secrets About Fashion People</h3>
-                            <p class="body_text-secondary"><em>January 12, 2020 by
+                            <p class="body__text"><em>January 12, 2020 by
                                     admin</em></p>
                         </figcaption>
                     </figure>
                     <figure class="carousel__item">
-                        <img src="images/blog-2.png" alt="The 15 Secrets About Fashion People">
+                        <img src="../src/images/blog-2.png" alt="The 15 Secrets About Fashion People"
+                            class="carousel__image">
                         <figcaption>
                             <h3 class="title title_size-h3">The 15 Secrets About Fashion People</h3>
-                            <p class="body_text-secondary"><em>January 12, 2020 by
+                            <p class="body__text"><em>January 12, 2020 by
                                     admin</em></p>
                         </figcaption>
                     </figure>
@@ -126,47 +138,47 @@
     <footer class="footer">
         <div class="footer__container">
             <section class="footer__item">
-                <h5 class="title title_size-h5 title_align-left"></h5>
-                <a href="" class="body__link body_text-secondary">The brand</a>
-                <a href="" class="body__link body_text-secondary">Local stores</a>
-                <a href="" class="body__link body_text-secondary">Customer service</a>
-                <a href="" class="body__link body_text-secondary">Privacy & cookies</a>
-                <a href="" class="body__link body_text-secondary">Site map</a>
+                <h5 class="title title_size-h5 title_align-left">INFORMATION</h5>
+                <a href="" class="body_text-secondary">The brand</a>
+                <a href="" class="body_text-secondary">Local stores</a>
+                <a href="" class="body_text-secondary">Customer service</a>
+                <a href="" class="body_text-secondary">Privacy & cookies</a>
+                <a href="" class="body_text-secondary">Site map</a>
             </section>
             <section class="footer__item">
-                <h5 class="title title_size-h5 title_align-left"></h5>
-                <a href="" class="body__link body_text-secondary">The brand</a>
-                <a href="" class="body__link body_text-secondary">Local stores</a>
-                <a href="" class="body__link body_text-secondary">Customer service</a>
-                <a href="" class="body__link body_text-secondary">Privacy & cookies</a>
-                <a href="" class="body__link body_text-secondary">Site map</a>
+                <h5 class="title title_size-h5 title_align-left">MY PROFILE</h5>
+                <a href="" class="body_text-secondary">The brand</a>
+                <a href="" class="body_text-secondary">Local stores</a>
+                <a href="" class="body_text-secondary">Customer service</a>
+                <a href="" class="body_text-secondary">Privacy & cookies</a>
+                <a href="" class="body_text-secondary">Site map</a>
             </section>
             <section class="footer__item">
-                <h5 class="title title_size-h5 title_align-left"></h5>
-                <a href="" class="body__link body_text-secondary">The brand</a>
-                <a href="" class="body__link body_text-secondary">Local stores</a>
-                <a href="" class="body__link body_text-secondary">Customer service</a>
-                <a href="" class="body__link body_text-secondary">Privacy & cookies</a>
-                <a href="" class="body__link body_text-secondary">Site map</a>
+                <h5 class="title title_size-h5 title_align-left">YOUR ACCOUNT</h5>
+                <a href="" class="body_text-secondary">The brand</a>
+                <a href="" class="body_text-secondary">Local stores</a>
+                <a href="" class="body_text-secondary">Customer service</a>
+                <a href="" class="body_text-secondary">Privacy & cookies</a>
+                <a href="" class="body_text-secondary">Site map</a>
             </section>
             <section class="footer__item">
-                <h5 class="title title_size-h5 title_align-left"></h5>
-                <a href="" class="body__link body_text-secondary">The brand</a>
-                <a href="" class="body__link body_text-secondary">Local stores</a>
-                <a href="" class="body__link body_text-secondary">Customer service</a>
-                <a href="" class="body__link body_text-secondary">Privacy & cookies</a>
-                <a href="" class="body__link body_text-secondary">Site map</a>
+                <h5 class="title title_size-h5 title_align-left">LOOKBOOK</h5>
+                <a href="" class="body_text-secondary">The brand</a>
+                <a href="" class="body_text-secondary">Local stores</a>
+                <a href="" class="body_text-secondary">Customer service</a>
+                <a href="" class="body_text-secondary">Privacy & cookies</a>
+                <a href="" class="body_text-secondary">Site map</a>
             </section>
             <section class="footer__item">
-                <h5 class="title title_size-h5 title_align-left"></h5>
-                <a href="" class="body__link body_text-secondary">The brand</a>
-                <a href="" class="body__link body_text-secondary">Local stores</a>
-                <a href="" class="body__link body_text-secondary">Customer service</a>
-                <a href="" class="body__link body_text-secondary">Privacy & cookies</a>
-                <a href="" class="body__link body_text-secondary">Site map</a>
+                <h5 class="title title_size-h5 title_align-left">CONTACT DETAILS</h5>
+                <a href="" class="body_text-secondary">The brand</a>
+                <a href="" class="body_text-secondary">Local stores</a>
+                <a href="" class="body_text-secondary">Customer service</a>
+                <a href="" class="body_text-secondary">Privacy & cookies</a>
+                <a href="" class="body_text-secondary">Site map</a>
             </section>
         </div>
-        <p class="body_text_secondary title">© Copyright e-commerce 1.0. 2022 </p>
+        <p class="body_text-secondary title">© Copyright e-commerce 1.0. 2022 </p>
     </footer>
 </body>
 
