@@ -1,111 +1,224 @@
 .body {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1920px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 2.14;
+    color: #171717;
+    margin: 0 auto;
+
+    a {
+        text-decoration: none;
+        color: #171717;
+    }
+
+    button {
+        border: none;
+        font-family: Montserrat;
+    }
+
+    nav {
+        a:hover {
+            transform: scale(1.1);
+        }
+    }
 
     &_text-secondary {
-    }
-
-    &_text {
-    }
-
-    &__link {
+        color: #727272;
     }
 
     &__btn {
+        width: 174px;
+        height: 59px;
+        color: white;
+        background-color: #171717;
 
         &_style-secondary {
+            color: #121212;
+            background-color: #f3ebdc;
         }
     }
 }
+
 .header {
+    height: 104px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 
     &__logo {
+        max-width: 200px;
+        //margin: 0 auto;
     }
 
     &__menu {
+        display: flex;
+        flex-wrap: wrap;
+        //justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        color: #171717;
+
+        a:nth-child(n) {
+            margin-right: 50px;
+        }
     }
 
     &__settings {
+        max-width: 200px;
+        display: flex;
+        float: right;
     }
+
 }
+
 .main {
 
     &__container {
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 90px;
     }
 }
+
 .banner {
+    margin-bottom: 80px;
 
     &__slide {
-    }
-
-    &__socials {
-    }
-
-    &__specials {
+        max-width: 100%;
     }
 }
+
 .categories {
-
-    &__item {
-    }
+    max-width: 830px;
+    margin: 27px auto 27px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.gallery {
 
-    &__item {
-    }
-}
 .title {
+    //width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 0.77;
+    letter-spacing: 2.6px;
+    font-weight: 600;
+    color: #2d2b27;
 
     &_size-h2 {
-    }
-
-    &_size-h4 {
-    }
-
-    &_size-h6 {
-    }
-
-    &_align-left {
+        margin-bottom: 27px;
+        font-size: 26px;
     }
 
     &_size-h3 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1;
+        letter-spacing: 0.9px;
+    }
+
+    &_size-h4 {
+        margin-bottom: 7px;
+        font-size: 14px;
+        line-height: 1.43;
+        letter-spacing: 5.6px;
+        color: #1a1a1a;
     }
 
     &_size-h5 {
+        font-size: 15px;
+        color: #575153;
+    }
+
+    &_size-h6 {
+        font-size: 15px;
+        line-height: 11px;
+        color: #1a1a1a;
+    }
+
+    &_align-left {
+        margin-left: 0;
+        text-align: left;
     }
 }
+
 .carousel {
+    display: flex;
+    align-items: center;
+    margin-top: 31px;
 
     &__btn {
 
         &_style-rect {
+            width: 43px;
+            height: 112px;
+            padding: 32px 17px 34px 16px;
+            writing-mode: vertical-lr;
+            color: #353535;
+            background-color: #afafaf;
         }
 
         &_style-round {
+            width: 49px;
+            height: 49px;
+            border: solid 2px #d9d9d9;
+            border-radius: 100%;
         }
     }
 
     &__items {
+        display: flex;
+        column-gap: 28px;
 
         &_count-x3 {
+            width: auto;
         }
 
         &_count-x4 {
+            width: auto;
         }
 
         &_count-x2 {
+            width: auto;
         }
     }
 
     &__item {
+        margin: 0;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     &__image {
+        width: 100%;
+    }
+
+    figcaption {
+        width: 408px;
+        height: 40px;
+        padding: 24px 34px 28px 56px;
+        position: relative;
+        bottom: 30px;
+        margin: 0 auto;
+        background-color: white;
     }
 }
+
 .footer {
+    position: relative;
+    bottom: 250px;
+    z-index: -1;
 
     &__container {
+        padding-top: 200px;
+        height: 534px;
+        background-color: #f8f8f8;
     }
 
     &__item {
+        display: block;
     }
 }
