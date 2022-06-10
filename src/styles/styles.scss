@@ -230,25 +230,27 @@
     &__btn {
 
         &_style-rect {
-            width: 43px;
-            height: 112px;
-            padding: 32px 17px 34px 16px;
-            writing-mode: vertical-lr;
+            width: 112px;
+            height: 43px;
+            margin: 0 60px;
+            font-size: 15px !important;
             color: #353535;
             background-color: #afafaf;
+            transform: rotate(-90deg);
         }
 
         &_style-round {
-            width: 49px;
+            min-width: 49px;
             height: 49px;
-            border: solid 2px #d9d9d9;
+            margin: 0 35px;
+            border: solid 2px #d9d9d9 !important;
+            background-color: transparent;
             border-radius: 100%;
         }
     }
 
     &__items {
         display: flex;
-
         column-gap: 28px;
     }
 
